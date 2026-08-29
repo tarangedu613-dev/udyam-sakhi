@@ -1,0 +1,1014 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description"
+        content="Register with Udyam Sakhi and become a part of a growing community of women.">
+
+    <meta name="theme-color" content="#c90068">
+
+    <title>Become a Member | Udyam Sakhi</title>
+
+
+    <!-- Bootstrap 5 -->
+    <link
+        href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+        rel="stylesheet">
+
+
+    <!-- Bootstrap Icons -->
+    <link
+        rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+
+
+    <!-- Google Fonts -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap"
+        rel="stylesheet">
+
+
+    <!-- Main CSS -->
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+
+<body class="auth-page">
+
+
+    <!-- =====================================================
+         HEADER
+    ====================================================== -->
+
+    <header class="site-header">
+
+        <nav class="navbar navbar-expand-lg navbar-light">
+
+            <div class="container">
+
+                <!-- Logo -->
+
+                <a
+                    class="navbar-brand"
+                    href="index.html">
+
+                    <img
+                        src="images/udyam-sakhi-header-logo.png"
+                        alt="Udyam Sakhi"
+                        class="header-logo">
+
+                </a>
+
+
+                <!-- Mobile Menu -->
+
+                <button
+                    class="navbar-toggler"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#registerNavbar"
+                    aria-controls="registerNavbar"
+                    aria-expanded="false"
+                    aria-label="Toggle navigation">
+
+                    <span class="navbar-toggler-icon"></span>
+
+                </button>
+
+
+                <!-- Navigation -->
+
+                <div
+                    class="collapse navbar-collapse"
+                    id="registerNavbar">
+
+                    <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+
+                        <li class="nav-item">
+
+                            <a
+                                class="nav-link"
+                                href="index.html">
+
+                                Home
+
+                            </a>
+
+                        </li>
+
+
+                        <li class="nav-item">
+
+                            <a
+                                class="nav-link"
+                                href="index.html#about">
+
+                                About
+
+                            </a>
+
+                        </li>
+
+
+                        <li class="nav-item">
+
+                            <a
+                                class="nav-link"
+                                href="index.html#why-udyam-sakhi">
+
+                                Why Udyam Sakhi
+
+                            </a>
+
+                        </li>
+
+
+                        <li class="nav-item">
+
+                            <a
+                                class="nav-link"
+                                href="login.html">
+
+                                Member Login
+
+                            </a>
+
+                        </li>
+
+                    </ul>
+
+
+                    <!-- Login Button -->
+
+                    <a
+                        href="login.html"
+                        class="btn btn-navbar">
+
+                        <i class="bi bi-box-arrow-in-right"></i>
+
+                        Member Login
+
+                    </a>
+
+                </div>
+
+            </div>
+
+        </nav>
+
+    </header>
+
+
+
+    <!-- =====================================================
+         REGISTRATION MAIN SECTION
+    ====================================================== -->
+
+    <main class="register-main">
+
+        <div class="container">
+
+            <div class="row justify-content-center">
+
+                <div class="col-xl-9 col-lg-10 col-md-11">
+
+
+                    <!-- =================================================
+                         PAGE INTRO
+                    ================================================== -->
+
+                    <div class="auth-intro text-center">
+
+                        <div class="auth-badge">
+
+                            <i class="bi bi-person-plus"></i>
+
+                            Become a Member
+
+                        </div>
+
+
+                        <h1>
+                            Join Udyam Sakhi
+                        </h1>
+
+
+                        <p>
+                            Create your membership account and become
+                            a part of a community built for women.
+                        </p>
+
+                    </div>
+
+
+
+                    <!-- =================================================
+                         REGISTRATION CARD
+                    ================================================== -->
+
+                    <div class="register-card">
+
+
+                        <!-- Card Header -->
+
+                        <div class="register-card-header">
+
+                            <div>
+
+                                <span class="section-label">
+                                    MEMBERSHIP REGISTRATION
+                                </span>
+
+                                <h2>
+                                    Create Your Account
+                                </h2>
+
+                                <p>
+                                    Enter your details below to get
+                                    started with Udyam Sakhi.
+                                </p>
+
+                            </div>
+
+
+                            <div class="register-header-icon">
+
+                                <i class="bi bi-person-vcard"></i>
+
+                            </div>
+
+                        </div>
+
+
+
+                        <!-- =================================================
+                             SUCCESS MESSAGE
+                        ================================================== -->
+
+                        <div
+                            id="registrationSuccess"
+                            class="registration-success d-none">
+
+                            <div class="success-icon">
+
+                                <i class="bi bi-check-circle-fill"></i>
+
+                            </div>
+
+
+                            <div>
+
+                                <h3>
+                                    Registration Successful!
+                                </h3>
+
+                                <p>
+                                    Your Udyam Sakhi membership has
+                                    been created successfully.
+                                </p>
+
+
+                                <div class="generated-user-id">
+
+                                    <span>
+                                        Your User ID
+                                    </span>
+
+                                    <strong id="generatedUserId">
+                                        USR100001
+                                    </strong>
+
+                                </div>
+
+
+                                <a
+                                    href="login.html"
+                                    class="btn btn-primary-main">
+
+                                    Go to Login
+
+                                    <i class="bi bi-arrow-right"></i>
+
+                                </a>
+
+                            </div>
+
+                        </div>
+
+
+
+                        <!-- =================================================
+                             REGISTRATION FORM
+                        ================================================== -->
+
+                        <form
+                            id="registrationForm"
+                            novalidate>
+
+
+                            <!-- =============================================
+                                 PERSONAL INFORMATION
+                            ============================================== -->
+
+                            <div class="form-section">
+
+                                <div class="form-section-title">
+
+                                    <div class="form-section-icon">
+
+                                        <i class="bi bi-person"></i>
+
+                                    </div>
+
+                                    <div>
+
+                                        <h3>
+                                            Personal Information
+                                        </h3>
+
+                                        <p>
+                                            Tell us a little about yourself.
+                                        </p>
+
+                                    </div>
+
+                                </div>
+
+
+
+                                <div class="row g-4">
+
+
+                                    <!-- Full Name -->
+
+                                    <div class="col-md-6">
+
+                                        <label
+                                            for="fullName"
+                                            class="form-label">
+
+                                            Full Name
+
+                                            <span class="required-mark">
+                                                *
+                                            </span>
+
+                                        </label>
+
+
+                                        <div class="input-wrapper">
+
+                                            <i class="bi bi-person"></i>
+
+                                            <input
+                                                type="text"
+                                                class="form-control"
+                                                id="fullName"
+                                                name="fullName"
+                                                placeholder="Enter your full name"
+                                                autocomplete="name"
+                                                required>
+
+                                        </div>
+
+
+                                        <div
+                                            class="field-error"
+                                            id="fullNameError">
+
+                                        </div>
+
+                                    </div>
+
+
+
+                                    <!-- Mobile -->
+
+                                    <div class="col-md-6">
+
+                                        <label
+                                            for="mobile"
+                                            class="form-label">
+
+                                            Mobile Number
+
+                                            <span class="required-mark">
+                                                *
+                                            </span>
+
+                                        </label>
+
+
+                                        <div class="input-wrapper">
+
+                                            <i class="bi bi-phone"></i>
+
+                                            <input
+                                                type="tel"
+                                                class="form-control"
+                                                id="mobile"
+                                                name="mobile"
+                                                placeholder="Enter 10-digit mobile number"
+                                                maxlength="10"
+                                                inputmode="numeric"
+                                                autocomplete="tel"
+                                                required>
+
+                                        </div>
+
+
+                                        <div
+                                            class="field-error"
+                                            id="mobileError">
+
+                                        </div>
+
+                                    </div>
+
+
+
+                                    <!-- Email -->
+
+                                    <div class="col-md-6">
+
+                                        <label
+                                            for="email"
+                                            class="form-label">
+
+                                            Email Address
+
+                                            <span class="required-mark">
+                                                *
+                                            </span>
+
+                                        </label>
+
+
+                                        <div class="input-wrapper">
+
+                                            <i class="bi bi-envelope"></i>
+
+                                            <input
+                                                type="email"
+                                                class="form-control"
+                                                id="email"
+                                                name="email"
+                                                placeholder="Enter your email address"
+                                                autocomplete="email"
+                                                required>
+
+                                        </div>
+
+
+                                        <div
+                                            class="field-error"
+                                            id="emailError">
+
+                                        </div>
+
+                                    </div>
+
+
+
+                                    <!-- Password -->
+
+                                    <div class="col-md-6">
+
+                                        <label
+                                            for="password"
+                                            class="form-label">
+
+                                            Password
+
+                                            <span class="required-mark">
+                                                *
+                                            </span>
+
+                                        </label>
+
+
+                                        <div class="input-wrapper">
+
+                                            <i class="bi bi-lock"></i>
+
+                                            <input
+                                                type="password"
+                                                class="form-control"
+                                                id="password"
+                                                name="password"
+                                                placeholder="Minimum 8 characters"
+                                                autocomplete="new-password"
+                                                required>
+
+
+                                            <button
+                                                type="button"
+                                                class="password-toggle"
+                                                data-target="password"
+                                                aria-label="Show password">
+
+                                                <i class="bi bi-eye"></i>
+
+                                            </button>
+
+                                        </div>
+
+
+                                        <div
+                                            class="field-error"
+                                            id="passwordError">
+
+                                        </div>
+
+                                    </div>
+
+
+
+                                    <!-- Confirm Password -->
+
+                                    <div class="col-md-6">
+
+                                        <label
+                                            for="confirmPassword"
+                                            class="form-label">
+
+                                            Confirm Password
+
+                                            <span class="required-mark">
+                                                *
+                                            </span>
+
+                                        </label>
+
+
+                                        <div class="input-wrapper">
+
+                                            <i class="bi bi-lock-fill"></i>
+
+                                            <input
+                                                type="password"
+                                                class="form-control"
+                                                id="confirmPassword"
+                                                name="confirmPassword"
+                                                placeholder="Re-enter your password"
+                                                autocomplete="new-password"
+                                                required>
+
+
+                                            <button
+                                                type="button"
+                                                class="password-toggle"
+                                                data-target="confirmPassword"
+                                                aria-label="Show password">
+
+                                                <i class="bi bi-eye"></i>
+
+                                            </button>
+
+                                        </div>
+
+
+                                        <div
+                                            class="field-error"
+                                            id="confirmPasswordError">
+
+                                        </div>
+
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+
+
+                            <!-- =============================================
+                                 ADDRESS INFORMATION
+                            ============================================== -->
+
+                            <div class="form-section">
+
+
+                                <div class="form-section-title">
+
+                                    <div class="form-section-icon">
+
+                                        <i class="bi bi-geo-alt"></i>
+
+                                    </div>
+
+                                    <div>
+
+                                        <h3>
+                                            Address Information
+                                        </h3>
+
+                                        <p>
+                                            Provide your current location details.
+                                        </p>
+
+                                    </div>
+
+                                </div>
+
+
+
+                                <div class="row g-4">
+
+
+                                    <!-- Address -->
+
+                                    <div class="col-12">
+
+                                        <label
+                                            for="address"
+                                            class="form-label">
+
+                                            Address
+
+                                            <span class="required-mark">
+                                                *
+                                            </span>
+
+                                        </label>
+
+
+                                        <div class="input-wrapper textarea-wrapper">
+
+                                            <i class="bi bi-house"></i>
+
+                                            <textarea
+                                                class="form-control"
+                                                id="address"
+                                                name="address"
+                                                rows="3"
+                                                placeholder="Enter your complete address"
+                                                required></textarea>
+
+                                        </div>
+
+
+                                        <div
+                                            class="field-error"
+                                            id="addressError">
+
+                                        </div>
+
+                                    </div>
+
+
+
+                                    <!-- City -->
+
+                                    <div class="col-md-4">
+
+                                        <label
+                                            for="city"
+                                            class="form-label">
+
+                                            City
+
+                                            <span class="required-mark">
+                                                *
+                                            </span>
+
+                                        </label>
+
+
+                                        <div class="input-wrapper">
+
+                                            <i class="bi bi-buildings"></i>
+
+                                            <input
+                                                type="text"
+                                                class="form-control"
+                                                id="city"
+                                                name="city"
+                                                placeholder="Enter city"
+                                                autocomplete="address-level2"
+                                                required>
+
+                                        </div>
+
+
+                                        <div
+                                            class="field-error"
+                                            id="cityError">
+
+                                        </div>
+
+                                    </div>
+
+
+
+                                    <!-- State -->
+
+                                    <div class="col-md-4">
+
+                                        <label
+                                            for="state"
+                                            class="form-label">
+
+                                            State
+
+                                            <span class="required-mark">
+                                                *
+                                            </span>
+
+                                        </label>
+
+
+                                        <div class="input-wrapper">
+
+                                            <i class="bi bi-map"></i>
+
+                                            <input
+                                                type="text"
+                                                class="form-control"
+                                                id="state"
+                                                name="state"
+                                                placeholder="Enter state"
+                                                autocomplete="address-level1"
+                                                required>
+
+                                        </div>
+
+
+                                        <div
+                                            class="field-error"
+                                            id="stateError">
+
+                                        </div>
+
+                                    </div>
+
+
+
+                                    <!-- Pincode -->
+
+                                    <div class="col-md-4">
+
+                                        <label
+                                            for="pincode"
+                                            class="form-label">
+
+                                            Pincode
+
+                                            <span class="required-mark">
+                                                *
+                                            </span>
+
+                                        </label>
+
+
+                                        <div class="input-wrapper">
+
+                                            <i class="bi bi-mailbox"></i>
+
+                                            <input
+                                                type="text"
+                                                class="form-control"
+                                                id="pincode"
+                                                name="pincode"
+                                                placeholder="6-digit pincode"
+                                                maxlength="6"
+                                                inputmode="numeric"
+                                                autocomplete="postal-code"
+                                                required>
+
+                                        </div>
+
+
+                                        <div
+                                            class="field-error"
+                                            id="pincodeError">
+
+                                        </div>
+
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+
+
+                            <!-- =================================================
+                                 TERMS
+                            ================================================== -->
+
+                            <div class="registration-terms">
+
+                                <div class="form-check">
+
+                                    <input
+                                        class="form-check-input"
+                                        type="checkbox"
+                                        id="termsCheckbox"
+                                        required>
+
+                                    <label
+                                        class="form-check-label"
+                                        for="termsCheckbox">
+
+                                        I agree to the
+                                        <a href="#">
+                                            Terms &amp; Conditions
+                                        </a>
+                                        and
+                                        <a href="#">
+                                            Privacy Policy
+                                        </a>.
+
+                                    </label>
+
+                                </div>
+
+
+                                <div
+                                    class="field-error"
+                                    id="termsError">
+
+                                </div>
+
+                            </div>
+
+
+
+                            <!-- =================================================
+                                 FORM ALERT
+                            ================================================== -->
+
+                            <div
+                                id="formAlert"
+                                class="alert d-none"
+                                role="alert">
+
+                            </div>
+
+
+
+                            <!-- =================================================
+                                 SUBMIT
+                            ================================================== -->
+
+                            <div class="registration-submit">
+
+                                <button
+                                    type="submit"
+                                    id="registerButton"
+                                    class="btn btn-register-submit">
+
+                                    <span
+                                        id="registerButtonText">
+
+                                        Create Membership
+
+                                    </span>
+
+
+                                    <span
+                                        id="registerButtonLoader"
+                                        class="d-none">
+
+                                        <span
+                                            class="spinner-border spinner-border-sm"
+                                            role="status"
+                                            aria-hidden="true">
+                                        </span>
+
+                                        Creating Account...
+
+                                    </span>
+
+
+                                    <i
+                                        class="bi bi-arrow-right"
+                                        id="registerButtonIcon">
+                                    </i>
+
+                                </button>
+
+                            </div>
+
+
+
+                            <!-- Login -->
+
+                            <div class="already-member">
+
+                                <span>
+                                    Already have a membership account?
+                                </span>
+
+                                <a href="login.html">
+                                    Member Login
+                                </a>
+
+                            </div>
+
+
+                        </form>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </main>
+
+
+
+    <!-- =====================================================
+         FOOTER
+    ====================================================== -->
+
+    <footer class="site-footer">
+
+        <div class="container">
+
+            <div class="footer-content">
+
+
+                <!-- Brand -->
+
+                <div class="footer-brand">
+
+                    <div class="footer-logo-text">
+
+                        US
+                        <span>
+                            Udyam Sakhi
+                        </span>
+
+                    </div>
+
+                    <p>
+                        Saath • Samman • Samriddhi
+                    </p>
+
+                </div>
+
+
+                <!-- Copyright -->
+
+                <div class="footer-copyright">
+
+                    <p>
+                        © 2025 Udyam Sakhi.
+                        All rights reserved.
+                    </p>
+
+                </div>
+
+
+                <!-- Links -->
+
+                <div class="footer-links">
+
+                    <a href="#">
+                        Privacy Policy
+                    </a>
+
+                    <a href="#">
+                        Terms &amp; Conditions
+                    </a>
+
+                    <a href="#">
+                        Contact Us
+                    </a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </footer>
+
+
+
+    <!-- =====================================================
+         BOOTSTRAP JAVASCRIPT
+    ====================================================== -->
+
+    <script
+        src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js">
+    </script>
+
+
+    <!-- Registration JavaScript -->
+    <script src="register.js"></script>
+
+</body>
+
+</html>

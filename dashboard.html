@@ -1,0 +1,1405 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description"
+        content="Udyam Sakhi Member Dashboard">
+
+    <meta name="theme-color" content="#c90068">
+
+    <title>Dashboard | Udyam Sakhi</title>
+
+
+    <!-- =====================================================
+         BOOTSTRAP
+    ====================================================== -->
+
+    <link
+        href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+        rel="stylesheet">
+
+
+    <!-- =====================================================
+         BOOTSTRAP ICONS
+    ====================================================== -->
+
+    <link
+        rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+
+
+    <!-- =====================================================
+         GOOGLE FONTS
+    ====================================================== -->
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap"
+        rel="stylesheet">
+
+
+    <!-- =====================================================
+         MAIN CSS
+    ====================================================== -->
+
+    <link
+        rel="stylesheet"
+        href="style.css">
+
+
+</head>
+
+
+<body class="dashboard-page">
+
+
+    <!-- =====================================================
+         DASHBOARD WRAPPER
+    ====================================================== -->
+
+    <div class="dashboard-wrapper">
+
+
+        <!-- =================================================
+             SIDEBAR
+        ================================================== -->
+
+        <aside
+            class="dashboard-sidebar"
+            id="dashboardSidebar">
+
+
+            <!-- =================================================
+                 SIDEBAR BRAND
+            ================================================== -->
+
+            <div class="sidebar-brand">
+
+
+                <a
+                    href="index.html"
+                    class="sidebar-logo-link">
+
+
+                    <img
+                        src="images/udyam-sakhi-header-logo.png"
+                        alt="Udyam Sakhi"
+                        class="sidebar-logo">
+
+
+                </a>
+
+
+                <button
+                    type="button"
+                    class="sidebar-close-btn"
+                    id="sidebarCloseBtn"
+                    aria-label="Close navigation">
+
+                    <i class="bi bi-x-lg"></i>
+
+                </button>
+
+
+            </div>
+
+
+
+            <!-- =================================================
+                 MEMBER MINI PROFILE
+            ================================================== -->
+
+            <div class="sidebar-member">
+
+
+                <div
+                    class="sidebar-member-avatar"
+                    data-member-initials>
+
+                    M
+
+                </div>
+
+
+                <div class="sidebar-member-info">
+
+
+                    <strong
+                        data-member-name>
+
+                        Member
+
+                    </strong>
+
+
+                    <span
+                        data-member-id>
+
+                        Member ID
+
+                    </span>
+
+
+                </div>
+
+
+            </div>
+
+
+
+            <!-- =================================================
+                 SIDEBAR NAVIGATION
+            ================================================== -->
+
+            <nav class="sidebar-navigation">
+
+
+                <span class="sidebar-nav-label">
+
+                    MEMBER MENU
+
+                </span>
+
+
+                <!-- Dashboard -->
+
+                <a
+                    href="dashboard.html"
+                    class="sidebar-nav-link active">
+
+
+                    <i class="bi bi-grid-1x2"></i>
+
+
+                    <span>
+                        Dashboard
+                    </span>
+
+
+                </a>
+
+
+
+                <!-- Profile -->
+
+                <a
+                    href="profile.html"
+                    class="sidebar-nav-link">
+
+
+                    <i class="bi bi-person"></i>
+
+
+                    <span>
+                        My Profile
+                    </span>
+
+
+                </a>
+
+
+
+                <!-- Membership -->
+
+                <a
+                    href="#membership"
+                    class="sidebar-nav-link">
+
+
+                    <i class="bi bi-person-vcard"></i>
+
+
+                    <span>
+                        Membership
+                    </span>
+
+
+                </a>
+
+
+
+                <!-- Community -->
+
+                <a
+                    href="#community"
+                    class="sidebar-nav-link">
+
+
+                    <i class="bi bi-people"></i>
+
+
+                    <span>
+                        Community
+                    </span>
+
+
+                </a>
+
+
+
+                <!-- Resources -->
+
+                <a
+                    href="#resources"
+                    class="sidebar-nav-link">
+
+
+                    <i class="bi bi-book"></i>
+
+
+                    <span>
+                        Resources
+                    </span>
+
+
+                </a>
+
+
+
+                <span class="sidebar-nav-label sidebar-nav-label-spaced">
+
+                    ACCOUNT
+
+                </span>
+
+
+
+                <!-- Settings -->
+
+                <a
+                    href="#settings"
+                    class="sidebar-nav-link">
+
+
+                    <i class="bi bi-gear"></i>
+
+
+                    <span>
+                        Settings
+                    </span>
+
+
+                </a>
+
+
+
+                <!-- Logout -->
+
+                <button
+                    type="button"
+                    class="sidebar-nav-link sidebar-logout"
+                    id="logoutButton">
+
+
+                    <i class="bi bi-box-arrow-left"></i>
+
+
+                    <span>
+                        Logout
+                    </span>
+
+
+                </button>
+
+
+            </nav>
+
+
+
+            <!-- =================================================
+                 SIDEBAR BOTTOM
+            ================================================== -->
+
+            <div class="sidebar-bottom">
+
+
+                <div class="sidebar-support-card">
+
+
+                    <div class="sidebar-support-icon">
+
+                        <i class="bi bi-headset"></i>
+
+                    </div>
+
+
+                    <div>
+
+                        <strong>
+                            Need Help?
+                        </strong>
+
+
+                        <span>
+                            We're here for you.
+                        </span>
+
+                    </div>
+
+
+                </div>
+
+
+                <p class="sidebar-tagline">
+
+                    Saath • Samman • Samriddhi
+
+                </p>
+
+
+            </div>
+
+
+        </aside>
+
+
+
+        <!-- =================================================
+             SIDEBAR OVERLAY — MOBILE
+        ================================================== -->
+
+        <div
+            class="sidebar-overlay"
+            id="sidebarOverlay">
+        </div>
+
+
+
+        <!-- =================================================
+             MAIN DASHBOARD
+        ================================================== -->
+
+        <main class="dashboard-main">
+
+
+            <!-- =================================================
+                 TOP HEADER
+            ================================================== -->
+
+            <header class="dashboard-header">
+
+
+                <div class="dashboard-header-left">
+
+
+                    <button
+                        type="button"
+                        class="dashboard-menu-btn"
+                        id="dashboardMenuBtn"
+                        aria-label="Open navigation">
+
+
+                        <i class="bi bi-list"></i>
+
+
+                    </button>
+
+
+                    <div>
+
+
+                        <span class="dashboard-header-label">
+
+                            MEMBER AREA
+
+                        </span>
+
+
+                        <h1>
+                            Dashboard
+                        </h1>
+
+
+                    </div>
+
+
+                </div>
+
+
+
+                <!-- =================================================
+                     HEADER RIGHT
+                ================================================== -->
+
+                <div class="dashboard-header-right">
+
+
+                    <button
+                        type="button"
+                        class="dashboard-notification-btn"
+                        aria-label="Notifications">
+
+
+                        <i class="bi bi-bell"></i>
+
+
+                        <span class="notification-dot"></span>
+
+
+                    </button>
+
+
+                    <div class="dashboard-header-divider"></div>
+
+
+                    <a
+                        href="profile.html"
+                        class="dashboard-header-profile">
+
+
+                        <div
+                            class="dashboard-header-avatar"
+                            data-member-initials>
+
+                            M
+
+                        </div>
+
+
+                        <div class="dashboard-header-profile-text">
+
+
+                            <strong
+                                data-member-name>
+
+                                Member
+
+                            </strong>
+
+
+                            <span>
+                                View Profile
+                            </span>
+
+
+                        </div>
+
+
+                        <i class="bi bi-chevron-down"></i>
+
+
+                    </a>
+
+
+                </div>
+
+
+            </header>
+
+
+
+            <!-- =================================================
+                 DASHBOARD CONTENT
+            ================================================== -->
+
+            <div class="dashboard-content">
+
+
+                <!-- =================================================
+                     WELCOME SECTION
+                ================================================== -->
+
+                <section class="dashboard-welcome">
+
+
+                    <div class="dashboard-welcome-content">
+
+
+                        <span class="dashboard-welcome-badge">
+
+                            <i class="bi bi-stars"></i>
+
+                            Welcome to Udyam Sakhi
+
+                        </span>
+
+
+                        <h2>
+
+                            Namaste,
+                            <span data-member-first-name>
+                                Member
+                            </span>!
+
+                        </h2>
+
+
+                        <p>
+
+                            Your journey with Udyam Sakhi starts here.
+                            Stay connected, explore opportunities and
+                            make the most of your membership.
+
+                        </p>
+
+
+                    </div>
+
+
+                    <div class="dashboard-welcome-decoration">
+
+
+                        <div class="welcome-decoration-circle">
+
+                            <i class="bi bi-flower1"></i>
+
+                        </div>
+
+
+                    </div>
+
+
+                </section>
+
+
+
+                <!-- =================================================
+                     QUICK STATS
+                ================================================== -->
+
+                <section class="dashboard-stats">
+
+
+                    <!-- Membership -->
+
+                    <div class="dashboard-stat-card">
+
+
+                        <div class="dashboard-stat-icon">
+
+                            <i class="bi bi-person-check"></i>
+
+                        </div>
+
+
+                        <div class="dashboard-stat-content">
+
+
+                            <span>
+                                Membership
+                            </span>
+
+
+                            <strong>
+                                Active
+                            </strong>
+
+
+                            <small>
+                                Your membership is active
+                            </small>
+
+
+                        </div>
+
+
+                    </div>
+
+
+
+                    <!-- Member ID -->
+
+                    <div class="dashboard-stat-card">
+
+
+                        <div class="dashboard-stat-icon">
+
+                            <i class="bi bi-person-vcard"></i>
+
+                        </div>
+
+
+                        <div class="dashboard-stat-content">
+
+
+                            <span>
+                                Member ID
+                            </span>
+
+
+                            <strong
+                                data-member-id>
+
+                                —
+
+                            </strong>
+
+
+                            <small>
+                                Your unique membership ID
+                            </small>
+
+
+                        </div>
+
+
+                    </div>
+
+
+
+                    <!-- Community -->
+
+                    <div class="dashboard-stat-card">
+
+
+                        <div class="dashboard-stat-icon">
+
+                            <i class="bi bi-people"></i>
+
+                        </div>
+
+
+                        <div class="dashboard-stat-content">
+
+
+                            <span>
+                                Community
+                            </span>
+
+
+                            <strong>
+                                Connected
+                            </strong>
+
+
+                            <small>
+                                You're part of our community
+                            </small>
+
+
+                        </div>
+
+
+                    </div>
+
+
+                </section>
+  <!-- My Credits -->
+
+<div class="dashboard-stat-card">
+
+    <div class="dashboard-stat-icon">
+        <i class="bi bi-coin"></i>
+    </div>
+
+    <div class="dashboard-stat-content">
+
+        <span>
+            My Credits
+        </span>
+
+        <strong id="userCredits">
+            0
+        </strong>
+
+        <small>
+            Available credits
+        </small>
+
+    </div>
+
+</div>
+
+
+                <!-- =================================================
+                     MAIN DASHBOARD GRID
+                ================================================== -->
+
+                <div class="dashboard-grid">
+
+
+                    <!-- =================================================
+                         PROFILE SUMMARY
+                    ================================================== -->
+
+                    <section
+                        class="dashboard-card profile-summary-card"
+                        id="membership">
+
+
+                        <div class="dashboard-card-header">
+
+
+                            <div>
+
+
+                                <span class="dashboard-card-label">
+
+                                    YOUR MEMBERSHIP
+
+                                </span>
+
+
+                                <h3>
+                                    Member Profile
+                                </h3>
+
+
+                            </div>
+
+
+                            <a
+                                href="profile.html"
+                                class="dashboard-card-action">
+
+                                Edit Profile
+
+                                <i class="bi bi-arrow-up-right"></i>
+
+                            </a>
+
+
+                        </div>
+
+
+
+                        <div class="profile-summary-body">
+
+
+                            <div class="profile-large-avatar"
+                                 data-member-initials>
+
+                                M
+
+                            </div>
+
+
+                            <div class="profile-summary-info">
+
+
+                                <h4
+                                    data-member-name>
+
+                                    Member
+
+                                </h4>
+
+
+                                <div class="profile-summary-id">
+
+
+                                    <i class="bi bi-person-badge"></i>
+
+
+                                    <span>
+                                        Member ID:
+                                    </span>
+
+
+                                    <strong
+                                        data-member-id>
+
+                                        —
+
+                                    </strong>
+
+
+                                </div>
+
+
+                                <div class="profile-summary-email">
+
+
+                                    <i class="bi bi-envelope"></i>
+
+
+                                    <span
+                                        data-member-email>
+
+                                        —
+
+                                    </span>
+
+
+                                </div>
+
+
+                                <div class="profile-summary-mobile">
+
+
+                                    <i class="bi bi-phone"></i>
+
+
+                                    <span
+                                        data-member-mobile>
+
+                                        —
+
+                                    </span>
+
+
+                                </div>
+
+
+                            </div>
+
+
+                        </div>
+
+
+                    </section>
+
+
+
+                    <!-- =================================================
+                         MEMBERSHIP STATUS
+                    ================================================== -->
+
+                    <section class="dashboard-card membership-status-card">
+
+
+                        <div class="dashboard-card-header">
+
+
+                            <div>
+
+
+                                <span class="dashboard-card-label">
+
+                                    MEMBERSHIP STATUS
+
+                                </span>
+
+
+                                <h3>
+                                    You're All Set
+                                </h3>
+
+
+                            </div>
+
+
+                            <div class="status-check-icon">
+
+                                <i class="bi bi-check-lg"></i>
+
+                            </div>
+
+
+                        </div>
+
+
+                        <div class="membership-status-body">
+
+
+                            <div class="status-progress">
+
+
+                                <div class="status-progress-top">
+
+
+                                    <span>
+                                        Membership
+                                    </span>
+
+
+                                    <strong>
+                                        Active
+                                    </strong>
+
+
+                                </div>
+
+
+                                <div class="status-progress-bar">
+
+
+                                    <span></span>
+
+
+                                </div>
+
+
+                            </div>
+
+
+                            <p>
+
+                                Your membership is currently active.
+                                You can access all available member
+                                features from your dashboard.
+
+                            </p>
+
+
+                        </div>
+
+
+                    </section>
+
+
+
+                    <!-- =================================================
+                         COMMUNITY CARD
+                    ================================================== -->
+
+                    <section
+                        class="dashboard-card community-card"
+                        id="community">
+
+
+                        <div class="dashboard-card-header">
+
+
+                            <div>
+
+
+                                <span class="dashboard-card-label">
+
+                                    COMMUNITY
+
+                                </span>
+
+
+                                <h3>
+                                    Grow Together
+                                </h3>
+
+
+                            </div>
+
+
+                            <div class="dashboard-card-icon">
+
+                                <i class="bi bi-people"></i>
+
+                            </div>
+
+
+                        </div>
+
+
+                        <p class="dashboard-card-description">
+
+                            Connect with women, discover opportunities
+                            and be part of a community that believes
+                            in growing together.
+
+                        </p>
+
+
+                        <a
+                            href="#"
+                            class="dashboard-outline-btn">
+
+                            Explore Community
+
+                            <i class="bi bi-arrow-right"></i>
+
+                        </a>
+
+
+                    </section>
+
+
+
+                    <!-- =================================================
+                         RESOURCES CARD
+                    ================================================== -->
+
+                    <section
+                        class="dashboard-card resources-card"
+                        id="resources">
+
+
+                        <div class="dashboard-card-header">
+
+
+                            <div>
+
+
+                                <span class="dashboard-card-label">
+
+                                    RESOURCES
+
+                                </span>
+
+
+                                <h3>
+                                    Learn & Grow
+                                </h3>
+
+
+                            </div>
+
+
+                            <div class="dashboard-card-icon">
+
+                                <i class="bi bi-book"></i>
+
+                            </div>
+
+
+                        </div>
+
+
+                        <p class="dashboard-card-description">
+
+                            Explore useful resources, learning material
+                            and information designed to support your
+                            personal and professional growth.
+
+                        </p>
+
+
+                        <a
+                            href="#"
+                            class="dashboard-outline-btn">
+
+                            View Resources
+
+                            <i class="bi bi-arrow-right"></i>
+
+                        </a>
+
+
+                    </section>
+
+
+
+                    <!-- =================================================
+                         QUICK ACTIONS
+                    ================================================== -->
+
+                    <section
+                        class="dashboard-card quick-actions-card">
+
+
+                        <div class="dashboard-card-header">
+
+
+                            <div>
+
+
+                                <span class="dashboard-card-label">
+
+                                    QUICK ACTIONS
+
+                                </span>
+
+
+                                <h3>
+                                    What would you like to do?
+                                </h3>
+
+
+                            </div>
+
+
+                        </div>
+
+
+                        <div class="quick-actions">
+
+
+                            <a
+                                href="profile.html"
+                                class="quick-action">
+
+
+                                <div class="quick-action-icon">
+
+                                    <i class="bi bi-person"></i>
+
+                                </div>
+
+
+                                <div>
+
+                                    <strong>
+                                        Update Profile
+                                    </strong>
+
+
+                                    <span>
+                                        Manage your information
+                                    </span>
+
+                                </div>
+
+
+                                <i class="bi bi-chevron-right"></i>
+
+
+                            </a>
+
+
+
+                            <a
+                                href="#community"
+                                class="quick-action">
+
+
+                                <div class="quick-action-icon">
+
+                                    <i class="bi bi-people"></i>
+
+                                </div>
+
+
+                                <div>
+
+                                    <strong>
+                                        Community
+                                    </strong>
+
+
+                                    <span>
+                                        Connect with members
+                                    </span>
+
+                                </div>
+
+
+                                <i class="bi bi-chevron-right"></i>
+
+
+                            </a>
+
+
+
+                            <a
+                                href="#resources"
+                                class="quick-action">
+
+
+                                <div class="quick-action-icon">
+
+                                    <i class="bi bi-journal-text"></i>
+
+                                </div>
+
+
+                                <div>
+
+                                    <strong>
+                                        Resources
+                                    </strong>
+
+
+                                    <span>
+                                        Explore learning material
+                                    </span>
+
+                                </div>
+
+
+                                <i class="bi bi-chevron-right"></i>
+
+
+                            </a>
+
+
+                        </div>
+
+
+                    </section>
+
+
+
+                    <!-- =================================================
+                         SUPPORT CARD
+                    ================================================== -->
+
+                    <section
+                        class="dashboard-card dashboard-support-card"
+                        id="settings">
+
+
+                        <div class="support-card-content">
+
+
+                            <div class="support-card-icon">
+
+                                <i class="bi bi-chat-heart"></i>
+
+                            </div>
+
+
+                            <div>
+
+
+                                <span class="dashboard-card-label">
+
+                                    SUPPORT
+
+                                </span>
+
+
+                                <h3>
+                                    We're here for you.
+                                </h3>
+
+
+                                <p>
+
+                                    Have a question or need help?
+                                    Reach out to the Udyam Sakhi team.
+
+                                </p>
+
+
+                                <a
+                                    href="#"
+                                    class="dashboard-support-link">
+
+                                    Contact Support
+
+                                    <i class="bi bi-arrow-right"></i>
+
+                                </a>
+
+
+                            </div>
+
+
+                        </div>
+
+
+                    </section>
+
+
+                </div>
+
+
+                <!-- =================================================
+                     DASHBOARD FOOTER
+                ================================================== -->
+
+                <footer class="dashboard-footer">
+
+
+                    <div>
+
+                        <strong>
+                            Udyam Sakhi
+                        </strong>
+
+                        <span>
+                            Saath • Samman • Samriddhi
+                        </span>
+
+                    </div>
+
+
+                    <p>
+
+                        © 2025 Udyam Sakhi.
+                        All rights reserved.
+
+                    </p>
+
+
+                </footer>
+
+
+            </div>
+
+        </main>
+
+    </div>
+
+
+
+    <!-- =====================================================
+         LOGOUT CONFIRMATION MODAL
+    ====================================================== -->
+
+    <div
+        class="modal fade"
+        id="logoutModal"
+        tabindex="-1"
+        aria-labelledby="logoutModalLabel"
+        aria-hidden="true">
+
+
+        <div class="modal-dialog modal-dialog-centered">
+
+
+            <div class="modal-content logout-modal-content">
+
+
+                <div class="logout-modal-icon">
+
+                    <i class="bi bi-box-arrow-left"></i>
+
+                </div>
+
+
+                <h3 id="logoutModalLabel">
+                    Sign out?
+                </h3>
+
+
+                <p>
+
+                    Are you sure you want to sign out
+                    of your Udyam Sakhi account?
+
+                </p>
+
+
+                <div class="logout-modal-actions">
+
+
+                    <button
+                        type="button"
+                        class="btn logout-cancel-btn"
+                        data-bs-dismiss="modal">
+
+                        Cancel
+
+                    </button>
+
+
+                    <button
+                        type="button"
+                        class="btn logout-confirm-btn"
+                        id="confirmLogoutButton">
+
+                        Yes, Sign Out
+
+                    </button>
+
+
+                </div>
+
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+
+    <!-- =====================================================
+         BOOTSTRAP JS
+    ====================================================== -->
+
+    <script
+        src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js">
+    </script>
+
+
+    <!-- =====================================================
+         AUTH JS
+    ====================================================== -->
+
+    <script src="auth.js"></script>
+
+
+    <!-- =====================================================
+         DASHBOARD JS
+    ====================================================== -->
+
+    <script src="dashboard.js"></script>
+
+
+</body>
+
+</html>

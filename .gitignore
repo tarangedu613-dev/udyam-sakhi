@@ -1,0 +1,11 @@
+.vscode/
+.metadata/
+*.zip
+
+udyam-sakhi-backend/target/
+*.class
+
+node_modules/
+
+.env
+.env.*

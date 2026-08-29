@@ -1,0 +1,683 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description"
+        content="Member Login - Udyam Sakhi">
+
+    <meta name="theme-color" content="#c90068">
+
+    <title>Member Login | Udyam Sakhi</title>
+
+
+    <!-- Bootstrap -->
+    <link
+        href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+        rel="stylesheet">
+
+
+    <!-- Bootstrap Icons -->
+    <link
+        rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+
+
+    <!-- Google Fonts -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap"
+        rel="stylesheet">
+
+
+    <!-- Main CSS -->
+    <link
+        rel="stylesheet"
+        href="style.css">
+
+</head>
+
+
+<body class="auth-page">
+
+
+    <!-- =====================================================
+         HEADER
+    ====================================================== -->
+
+    <header class="site-header">
+
+        <nav class="navbar navbar-expand-lg navbar-light">
+
+            <div class="container">
+
+
+                <!-- Logo -->
+
+                <a
+                    class="navbar-brand"
+                    href="index.html">
+
+                    <img
+                        src="images/udyam-sakhi-header-logo.png"
+                        alt="Udyam Sakhi"
+                        class="header-logo">
+
+                </a>
+
+
+
+                <!-- Mobile Menu -->
+
+                <button
+                    class="navbar-toggler"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#loginNavbar"
+                    aria-controls="loginNavbar"
+                    aria-expanded="false"
+                    aria-label="Toggle navigation">
+
+                    <span class="navbar-toggler-icon"></span>
+
+                </button>
+
+
+
+                <!-- Navigation -->
+
+                <div
+                    class="collapse navbar-collapse"
+                    id="loginNavbar">
+
+
+                    <ul
+                        class="navbar-nav mx-auto mb-2 mb-lg-0">
+
+
+                        <li class="nav-item">
+
+                            <a
+                                class="nav-link"
+                                href="index.html">
+
+                                Home
+
+                            </a>
+
+                        </li>
+
+
+                        <li class="nav-item">
+
+                            <a
+                                class="nav-link"
+                                href="index.html#about">
+
+                                About
+
+                            </a>
+
+                        </li>
+
+
+                        <li class="nav-item">
+
+                            <a
+                                class="nav-link"
+                                href="index.html#why-udyam-sakhi">
+
+                                Why Udyam Sakhi
+
+                            </a>
+
+                        </li>
+
+
+                        <li class="nav-item">
+
+                            <a
+                                class="nav-link active"
+                                href="login.html">
+
+                                Member Login
+
+                            </a>
+
+                        </li>
+
+                    </ul>
+
+
+
+                    <!-- Register -->
+
+                    <a
+                        href="register.html"
+                        class="btn btn-navbar">
+
+                        <i class="bi bi-person-plus"></i>
+
+                        Become a Member
+
+                    </a>
+
+                </div>
+
+            </div>
+
+        </nav>
+
+    </header>
+
+
+
+    <!-- =====================================================
+         LOGIN MAIN
+    ====================================================== -->
+
+    <main class="login-main">
+
+        <div class="container">
+
+            <div class="row justify-content-center">
+
+                <div class="col-xl-10 col-lg-10 col-md-11">
+
+
+                    <div class="login-layout">
+
+
+                        <!-- =================================================
+                             LEFT SIDE
+                        ================================================== -->
+
+                        <div class="login-info">
+
+
+                            <div class="login-info-content">
+
+
+                                <div class="auth-badge">
+
+                                    <i class="bi bi-shield-check"></i>
+
+                                    Member Access
+
+                                </div>
+
+
+                                <h1>
+
+                                    Welcome
+                                    <span>Back.</span>
+
+                                </h1>
+
+
+                                <p>
+
+                                    Sign in to access your Udyam Sakhi
+                                    membership, community and personalized
+                                    member dashboard.
+
+                                </p>
+
+
+
+                                <!-- Benefits -->
+
+                                <div class="login-benefits">
+
+
+                                    <div class="login-benefit">
+
+                                        <div class="login-benefit-icon">
+
+                                            <i class="bi bi-people"></i>
+
+                                        </div>
+
+                                        <div>
+
+                                            <h3>
+                                                Your Community
+                                            </h3>
+
+                                            <p>
+                                                Stay connected with fellow
+                                                members.
+                                            </p>
+
+                                        </div>
+
+                                    </div>
+
+
+
+                                    <div class="login-benefit">
+
+                                        <div class="login-benefit-icon">
+
+                                            <i class="bi bi-grid-1x2"></i>
+
+                                        </div>
+
+                                        <div>
+
+                                            <h3>
+                                                Member Dashboard
+                                            </h3>
+
+                                            <p>
+                                                Access your profile and
+                                                membership information.
+                                            </p>
+
+                                        </div>
+
+                                    </div>
+
+
+
+                                    <div class="login-benefit">
+
+                                        <div class="login-benefit-icon">
+
+                                            <i class="bi bi-lock"></i>
+
+                                        </div>
+
+                                        <div>
+
+                                            <h3>
+                                                Secure Access
+                                            </h3>
+
+                                            <p>
+                                                Your account information
+                                                stays protected.
+                                            </p>
+
+                                        </div>
+
+                                    </div>
+
+
+                                </div>
+
+
+                            </div>
+
+                        </div>
+
+
+
+                        <!-- =================================================
+                             RIGHT LOGIN CARD
+                        ================================================== -->
+
+                        <div class="login-card">
+
+
+                            <!-- Login Header -->
+
+                            <div class="login-card-header">
+
+
+                                <div class="login-icon">
+
+                                    <i class="bi bi-person-circle"></i>
+
+                                </div>
+
+
+                                <span class="section-label">
+
+                                    MEMBER LOGIN
+
+                                </span>
+
+
+                                <h2>
+
+                                    Sign In
+
+                                </h2>
+
+
+                                <p>
+
+                                    Enter your membership credentials
+                                    to continue.
+
+                                </p>
+
+
+                            </div>
+
+
+
+                            <!-- =================================================
+                                 LOGIN FORM
+                            ================================================== -->
+
+                            <form
+                                id="loginForm"
+                                novalidate>
+
+
+                                <!-- User ID -->
+
+                                <div class="login-form-group">
+
+                                    <label
+                                        for="userId"
+                                        class="form-label">
+
+                                        User ID
+
+                                        <span class="required-mark">
+                                            *
+                                        </span>
+
+                                    </label>
+
+
+                                    <div class="input-wrapper">
+
+                                        <i class="bi bi-person-badge"></i>
+
+                                        <input
+                                            type="text"
+                                            class="form-control"
+                                            id="userId"
+                                            name="userId"
+                                            placeholder="Enter your User ID"
+                                            autocomplete="username"
+                                            required>
+
+                                    </div>
+
+
+                                    <div
+                                        class="field-error"
+                                        id="userIdError">
+
+                                    </div>
+
+                                </div>
+
+
+
+                                <!-- Password -->
+
+                                <div class="login-form-group">
+
+                                    <div class="password-label-row">
+
+                                        <label
+                                            for="loginPassword"
+                                            class="form-label">
+
+                                            Password
+
+                                            <span class="required-mark">
+                                                *
+                                            </span>
+
+                                        </label>
+
+
+                                        <a
+                                            href="#"
+                                            id="forgotPasswordLink">
+
+                                            Forgot Password?
+
+                                        </a>
+
+                                    </div>
+
+
+                                    <div class="input-wrapper">
+
+                                        <i class="bi bi-lock"></i>
+
+                                        <input
+                                            type="password"
+                                            class="form-control"
+                                            id="loginPassword"
+                                            name="password"
+                                            placeholder="Enter your password"
+                                            autocomplete="current-password"
+                                            required>
+
+
+                                        <button
+                                            type="button"
+                                            class="password-toggle"
+                                            data-target="loginPassword"
+                                            aria-label="Show password">
+
+                                            <i class="bi bi-eye"></i>
+
+                                        </button>
+
+                                    </div>
+
+
+                                    <div
+                                        class="field-error"
+                                        id="loginPasswordError">
+
+                                    </div>
+
+                                </div>
+
+
+
+                                <!-- Remember Me -->
+
+                                <div class="login-options">
+
+                                    <div class="form-check">
+
+                                        <input
+                                            class="form-check-input"
+                                            type="checkbox"
+                                            id="rememberMe">
+
+
+                                        <label
+                                            class="form-check-label"
+                                            for="rememberMe">
+
+                                            Remember me
+
+                                        </label>
+
+                                    </div>
+
+                                </div>
+
+
+
+                                <!-- Error -->
+
+                                <div
+                                    id="loginAlert"
+                                    class="alert d-none"
+                                    role="alert">
+
+                                </div>
+
+
+
+                                <!-- Submit -->
+
+                                <button
+                                    type="submit"
+                                    class="btn btn-login-submit"
+                                    id="loginButton">
+
+
+                                    <span id="loginButtonText">
+
+                                        Sign In
+
+                                    </span>
+
+
+                                    <span
+                                        id="loginButtonLoader"
+                                        class="d-none">
+
+                                        <span
+                                            class="spinner-border spinner-border-sm"
+                                            role="status"
+                                            aria-hidden="true">
+                                        </span>
+
+                                        Signing In...
+
+                                    </span>
+
+
+                                    <i
+                                        class="bi bi-arrow-right"
+                                        id="loginButtonIcon">
+                                    </i>
+
+                                </button>
+
+
+                            </form>
+
+
+
+                            <!-- Register -->
+
+                            <div class="login-register">
+
+                                <span>
+
+                                    Don't have an account?
+
+                                </span>
+
+
+                                <a href="register.html">
+
+                                    Become a Member
+
+                                </a>
+
+                            </div>
+
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </main>
+
+
+
+    <!-- =====================================================
+         FOOTER
+    ====================================================== -->
+
+    <footer class="site-footer">
+
+        <div class="container">
+
+            <div class="footer-content">
+
+
+                <div class="footer-brand">
+
+                    <div class="footer-logo-text">
+
+                        US
+
+                        <span>
+                            Udyam Sakhi
+                        </span>
+
+                    </div>
+
+
+                    <p>
+                        Saath • Samman • Samriddhi
+                    </p>
+
+                </div>
+
+
+
+                <div class="footer-copyright">
+
+                    <p>
+
+                        © 2025 Udyam Sakhi.
+                        All rights reserved.
+
+                    </p>
+
+                </div>
+
+
+
+                <div class="footer-links">
+
+                    <a href="#">
+                        Privacy Policy
+                    </a>
+
+
+                    <a href="#">
+                        Terms &amp; Conditions
+                    </a>
+
+
+                    <a href="#">
+                        Contact Us
+                    </a>
+
+                </div>
+
+
+            </div>
+
+        </div>
+
+    </footer>
+
+
+
+    <!-- =====================================================
+         BOOTSTRAP JS
+    ====================================================== -->
+
+    <script
+        src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js">
+    </script>
+
+
+    <!-- Login JavaScript -->
+
+    <script src="login.js"></script>
+
+</body>
+
+</html>

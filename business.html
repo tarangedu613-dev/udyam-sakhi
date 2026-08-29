@@ -1,0 +1,1223 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <!-- =====================================================
+         BASIC SETTINGS
+    ====================================================== -->
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <meta
+        name="description"
+        content="My Business | Udyam Sakhi"
+    >
+
+    <title>
+        My Business | Udyam Sakhi
+    </title>
+
+
+    <!-- =====================================================
+         GOOGLE FONTS
+    ====================================================== -->
+
+    <link
+        rel="preconnect"
+        href="https://fonts.googleapis.com"
+    >
+
+    <link
+        rel="preconnect"
+        href="https://fonts.gstatic.com"
+        crossorigin
+    >
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&family=Playfair+Display:wght@600;700&display=swap"
+        rel="stylesheet"
+    >
+
+
+    <!-- =====================================================
+         BOOTSTRAP ICONS
+    ====================================================== -->
+
+    <link
+        rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    >
+
+
+    <!-- =====================================================
+         BOOTSTRAP
+    ====================================================== -->
+
+    <link
+        href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+        rel="stylesheet"
+    >
+
+
+    <!-- =====================================================
+         MAIN CSS
+    ====================================================== -->
+
+    <link
+        rel="stylesheet"
+        href="style.css"
+    >
+
+</head>
+
+
+<body class="dashboard-page business-page">
+
+
+    <!-- =====================================================
+         DASHBOARD WRAPPER
+    ====================================================== -->
+
+    <div class="dashboard-wrapper">
+
+
+        <!-- =================================================
+             SIDEBAR
+        ================================================== -->
+
+        <aside
+            class="dashboard-sidebar"
+            id="dashboardSidebar"
+        >
+
+
+            <!-- =============================================
+                 BRAND
+            ============================================== -->
+
+            <div class="sidebar-brand">
+
+                <a
+                    href="dashboard.html"
+                    class="sidebar-logo-link"
+                >
+
+                    <img
+                        src="images/udyam-sakhi-header-logo.png"
+                        alt="Udyam Sakhi"
+                        class="sidebar-logo"
+                    >
+
+                </a>
+
+
+                <button
+                    type="button"
+                    class="sidebar-close-btn"
+                    id="sidebarCloseBtn"
+                    aria-label="Close menu"
+                >
+
+                    <i class="bi bi-x-lg"></i>
+
+                </button>
+
+            </div>
+
+
+            <!-- =============================================
+                 MEMBER
+            ============================================== -->
+
+            <div class="sidebar-member">
+
+                <div
+                    class="sidebar-member-avatar"
+                    data-member-initials
+                >
+                    M
+                </div>
+
+
+                <div class="sidebar-member-info">
+
+                    <strong
+                        data-member-name
+                    >
+                        Member
+                    </strong>
+
+                    <span>
+                        Udyam Sakhi Member
+                    </span>
+
+                </div>
+
+            </div>
+
+
+            <!-- =============================================
+                 NAVIGATION
+            ============================================== -->
+
+            <nav class="sidebar-navigation">
+
+
+                <span class="sidebar-nav-label">
+                    MAIN MENU
+                </span>
+
+
+                <a
+                    href="dashboard.html"
+                    class="sidebar-nav-link"
+                >
+
+                    <i class="bi bi-grid-1x2"></i>
+
+                    <span>
+                        Dashboard
+                    </span>
+
+                </a>
+
+
+                <a
+                    href="profile.html"
+                    class="sidebar-nav-link"
+                >
+
+                    <i class="bi bi-person"></i>
+
+                    <span>
+                        My Profile
+                    </span>
+
+                </a>
+
+
+                <span
+                    class="sidebar-nav-label sidebar-nav-label-spaced"
+                >
+                    MY UDYAM
+                </span>
+
+
+                <a
+                    href="business.html"
+                    class="sidebar-nav-link active"
+                >
+
+                    <i class="bi bi-shop"></i>
+
+                    <span>
+                        My Business
+                    </span>
+
+                </a>
+
+
+                <a
+                    href="#documents"
+                    class="sidebar-nav-link"
+                >
+
+                    <i class="bi bi-folder2-open"></i>
+
+                    <span>
+                        Documents
+                    </span>
+
+                </a>
+
+
+                <a
+                    href="#resources"
+                    class="sidebar-nav-link"
+                >
+
+                    <i class="bi bi-book"></i>
+
+                    <span>
+                        Resources
+                    </span>
+
+                </a>
+
+
+                <span
+                    class="sidebar-nav-label sidebar-nav-label-spaced"
+                >
+                    ACCOUNT
+                </span>
+
+
+                <a
+                    href="#settings"
+                    class="sidebar-nav-link"
+                >
+
+                    <i class="bi bi-gear"></i>
+
+                    <span>
+                        Settings
+                    </span>
+
+                </a>
+
+
+                <button
+                    type="button"
+                    class="sidebar-nav-link sidebar-logout"
+                    id="logoutButton"
+                >
+
+                    <i class="bi bi-box-arrow-right"></i>
+
+                    <span>
+                        Sign Out
+                    </span>
+
+                </button>
+
+            </nav>
+
+
+            <!-- =============================================
+                 SIDEBAR BOTTOM
+            ============================================== -->
+
+            <div class="sidebar-bottom">
+
+                <div class="sidebar-support-card">
+
+                    <div class="sidebar-support-icon">
+
+                        <i class="bi bi-headset"></i>
+
+                    </div>
+
+
+                    <div>
+
+                        <strong>
+                            Need help?
+                        </strong>
+
+                        <span>
+                            Contact Udyam Sakhi support
+                        </span>
+
+                    </div>
+
+                </div>
+
+
+                <p class="sidebar-tagline">
+                    Empowering women. Building futures.
+                </p>
+
+            </div>
+
+        </aside>
+
+
+        <!-- =================================================
+             SIDEBAR OVERLAY
+        ================================================== -->
+
+        <div
+            class="sidebar-overlay"
+            id="sidebarOverlay"
+        ></div>
+
+
+        <!-- =================================================
+             MAIN
+        ================================================== -->
+
+        <main class="dashboard-main">
+
+
+            <!-- =============================================
+                 HEADER
+            ============================================== -->
+
+            <header class="dashboard-header">
+
+
+                <div class="dashboard-header-left">
+
+                    <button
+                        type="button"
+                        class="dashboard-menu-btn"
+                        id="dashboardMenuBtn"
+                        aria-label="Open menu"
+                    >
+
+                        <i class="bi bi-list"></i>
+
+                    </button>
+
+
+                    <div>
+
+                        <span class="dashboard-header-label">
+                            UDYAM SAKHI
+                        </span>
+
+                        <h1>
+                            My Business
+                        </h1>
+
+                    </div>
+
+                </div>
+
+
+                <!-- =========================================
+                     HEADER RIGHT
+                ========================================== -->
+
+                <div class="dashboard-header-right">
+
+
+                    <button
+                        type="button"
+                        class="dashboard-notification-btn"
+                        aria-label="Notifications"
+                    >
+
+                        <i class="bi bi-bell"></i>
+
+                        <span class="notification-dot"></span>
+
+                    </button>
+
+
+                    <div class="dashboard-header-divider"></div>
+
+
+                    <a
+                        href="profile.html"
+                        class="dashboard-header-profile"
+                    >
+
+                        <div
+                            class="dashboard-header-avatar"
+                            data-member-initials
+                        >
+                            M
+                        </div>
+
+
+                        <div class="dashboard-header-profile-text">
+
+                            <strong
+                                data-member-name
+                            >
+                                Member
+                            </strong>
+
+                            <span>
+                                My Account
+                            </span>
+
+                        </div>
+
+
+                        <i class="bi bi-chevron-down"></i>
+
+                    </a>
+
+                </div>
+
+            </header>
+
+
+            <!-- =============================================
+                 CONTENT
+            ============================================== -->
+
+            <section class="dashboard-content">
+
+
+                <!-- =========================================
+                     BUSINESS HERO
+                ========================================== -->
+
+                <div class="business-hero-card">
+
+
+                    <div class="business-hero-main">
+
+
+                        <div class="business-hero-icon">
+
+                            <i class="bi bi-shop"></i>
+
+                        </div>
+
+
+                        <div>
+
+                            <span class="dashboard-card-label">
+                                MY UDYAM
+                            </span>
+
+                            <h2>
+                                Your Business
+                            </h2>
+
+                            <p>
+                                Manage your business information,
+                                registration details and Udyam profile.
+                            </p>
+
+                        </div>
+
+                    </div>
+
+
+                    <button
+                        type="button"
+                        class="business-edit-btn"
+                        id="editBusinessButton"
+                    >
+
+                        <i class="bi bi-pencil"></i>
+
+                        Edit Business
+
+                    </button>
+
+                </div>
+
+
+                <!-- =========================================
+                     BUSINESS OVERVIEW
+                ========================================== -->
+
+                <div class="dashboard-card business-overview-card">
+
+
+                    <div class="dashboard-card-header">
+
+
+                        <div>
+
+                            <span class="dashboard-card-label">
+                                BUSINESS OVERVIEW
+                            </span>
+
+                            <h3>
+                                Business Details
+                            </h3>
+
+                        </div>
+
+
+                        <div class="business-status-badge">
+
+                            <span></span>
+
+                            Active
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="business-information-grid">
+
+
+                        <!-- BUSINESS NAME -->
+
+                        <div class="business-field">
+
+                            <span>
+                                Business Name
+                            </span>
+
+                            <strong
+                                data-business-name
+                            >
+                                Not added
+                            </strong>
+
+                        </div>
+
+
+                        <!-- BUSINESS TYPE -->
+
+                        <div class="business-field">
+
+                            <span>
+                                Business Type
+                            </span>
+
+                            <strong
+                                data-business-type
+                            >
+                                Not added
+                            </strong>
+
+                        </div>
+
+
+                        <!-- BUSINESS CATEGORY -->
+
+                        <div class="business-field">
+
+                            <span>
+                                Business Category
+                            </span>
+
+                            <strong
+                                data-business-category
+                            >
+                                Not added
+                            </strong>
+
+                        </div>
+
+
+                        <!-- UDYAM NUMBER -->
+
+                        <div class="business-field">
+
+                            <span>
+                                Udyam Registration Number
+                            </span>
+
+                            <strong
+                                data-udyam-number
+                            >
+                                Not added
+                            </strong>
+
+                        </div>
+
+
+                        <!-- BUSINESS ADDRESS -->
+
+                        <div
+                            class="business-field business-field-full"
+                        >
+
+                            <span>
+                                Business Address
+                            </span>
+
+                            <strong
+                                data-business-address
+                            >
+                                Not added
+                            </strong>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <!-- =========================================
+                     REGISTRATION STATUS
+                ========================================== -->
+
+                <div class="business-two-column">
+
+
+                    <!-- =====================================
+                         UDYAM REGISTRATION
+                    ====================================== -->
+
+                    <div class="dashboard-card">
+
+
+                        <div class="dashboard-card-header">
+
+                            <div>
+
+                                <span class="dashboard-card-label">
+                                    REGISTRATION
+                                </span>
+
+                                <h3>
+                                    Udyam Registration
+                                </h3>
+
+                            </div>
+
+
+                            <div class="business-small-icon">
+
+                                <i class="bi bi-patch-check"></i>
+
+                            </div>
+
+                        </div>
+
+
+                        <div class="business-registration-box">
+
+
+                            <div class="business-registration-status">
+
+                                <div class="business-registration-check">
+
+                                    <i class="bi bi-check-lg"></i>
+
+                                </div>
+
+
+                                <div>
+
+                                    <strong>
+                                        Registration Status
+                                    </strong>
+
+                                    <span>
+                                        Your Udyam registration status
+                                    </span>
+
+                                </div>
+
+                            </div>
+
+
+                            <div class="business-registration-detail">
+
+                                <span>
+                                    Registration Number
+                                </span>
+
+                                <strong
+                                    data-udyam-number
+                                >
+                                    Not added
+                                </strong>
+
+                            </div>
+
+
+                            <div class="business-registration-detail">
+
+                                <span>
+                                    Registration Type
+                                </span>
+
+                                <strong>
+                                    Udyam Registration
+                                </strong>
+
+                            </div>
+
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- =====================================
+                         BUSINESS CATEGORY
+                    ====================================== -->
+
+                    <div class="dashboard-card">
+
+
+                        <div class="dashboard-card-header">
+
+                            <div>
+
+                                <span class="dashboard-card-label">
+                                    CATEGORY
+                                </span>
+
+                                <h3>
+                                    Business Classification
+                                </h3>
+
+                            </div>
+
+
+                            <div class="business-small-icon">
+
+                                <i class="bi bi-diagram-3"></i>
+
+                            </div>
+
+                        </div>
+
+
+                        <div class="business-classification-list">
+
+
+                            <div class="business-classification-item">
+
+                                <div class="business-classification-icon">
+
+                                    <i class="bi bi-buildings"></i>
+
+                                </div>
+
+
+                                <div>
+
+                                    <span>
+                                        Business Type
+                                    </span>
+
+                                    <strong
+                                        data-business-type
+                                    >
+                                        Not added
+                                    </strong>
+
+                                </div>
+
+                            </div>
+
+
+                            <div class="business-classification-item">
+
+                                <div class="business-classification-icon">
+
+                                    <i class="bi bi-tags"></i>
+
+                                </div>
+
+
+                                <div>
+
+                                    <span>
+                                        Category
+                                    </span>
+
+                                    <strong
+                                        data-business-category
+                                    >
+                                        Not added
+                                    </strong>
+
+                                </div>
+
+                            </div>
+
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <!-- =========================================
+                     BUSINESS INFORMATION
+                ========================================== -->
+
+                <div class="dashboard-card">
+
+
+                    <div class="dashboard-card-header">
+
+
+                        <div>
+
+                            <span class="dashboard-card-label">
+                                BUSINESS PROFILE
+                            </span>
+
+                            <h3>
+                                About Your Business
+                            </h3>
+
+                        </div>
+
+
+                        <div class="business-small-icon">
+
+                            <i class="bi bi-info-circle"></i>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="business-profile-content">
+
+
+                        <div class="business-profile-item">
+
+
+                            <div class="business-profile-item-icon">
+
+                                <i class="bi bi-shop-window"></i>
+
+                            </div>
+
+
+                            <div>
+
+                                <span>
+                                    Business Name
+                                </span>
+
+                                <strong
+                                    data-business-name
+                                >
+                                    Not added
+                                </strong>
+
+                            </div>
+
+                        </div>
+
+
+                        <div class="business-profile-item">
+
+
+                            <div class="business-profile-item-icon">
+
+                                <i class="bi bi-geo-alt"></i>
+
+                            </div>
+
+
+                            <div>
+
+                                <span>
+                                    Location
+                                </span>
+
+                                <strong
+                                    data-business-address
+                                >
+                                    Not added
+                                </strong>
+
+                            </div>
+
+                        </div>
+
+
+                        <div class="business-profile-item">
+
+
+                            <div class="business-profile-item-icon">
+
+                                <i class="bi bi-briefcase"></i>
+
+                            </div>
+
+
+                            <div>
+
+                                <span>
+                                    Business Category
+                                </span>
+
+                                <strong
+                                    data-business-category
+                                >
+                                    Not added
+                                </strong>
+
+                            </div>
+
+                        </div>
+
+
+                        <div class="business-profile-item">
+
+
+                            <div class="business-profile-item-icon">
+
+                                <i class="bi bi-building"></i>
+
+                            </div>
+
+
+                            <div>
+
+                                <span>
+                                    Business Structure
+                                </span>
+
+                                <strong
+                                    data-business-type
+                                >
+                                    Not added
+                                </strong>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <!-- =========================================
+                     BUSINESS ACTIONS
+                ========================================== -->
+
+                <div class="business-actions-grid">
+
+
+                    <div class="business-action-card">
+
+
+                        <div class="business-action-icon">
+
+                            <i class="bi bi-file-earmark-text"></i>
+
+                        </div>
+
+
+                        <div>
+
+                            <strong>
+                                Manage Documents
+                            </strong>
+
+                            <span>
+                                Upload and manage your
+                                business documents.
+                            </span>
+
+                        </div>
+
+
+                        <a
+                            href="#documents"
+                            class="business-action-link"
+                        >
+
+                            Open
+
+                            <i class="bi bi-arrow-right"></i>
+
+                        </a>
+
+                    </div>
+
+
+                    <div class="business-action-card">
+
+
+                        <div class="business-action-icon">
+
+                            <i class="bi bi-book"></i>
+
+                        </div>
+
+
+                        <div>
+
+                            <strong>
+                                Business Resources
+                            </strong>
+
+                            <span>
+                                Explore useful resources
+                                for your business.
+                            </span>
+
+                        </div>
+
+
+                        <a
+                            href="#resources"
+                            class="business-action-link"
+                        >
+
+                            Explore
+
+                            <i class="bi bi-arrow-right"></i>
+
+                        </a>
+
+                    </div>
+
+
+                    <div class="business-action-card">
+
+
+                        <div class="business-action-icon">
+
+                            <i class="bi bi-headset"></i>
+
+                        </div>
+
+
+                        <div>
+
+                            <strong>
+                                Get Support
+                            </strong>
+
+                            <span>
+                                Need help with your business
+                                registration?
+                            </span>
+
+                        </div>
+
+
+                        <a
+                            href="#support"
+                            class="business-action-link"
+                            id="businessSupportLink"
+                        >
+
+                            Contact
+
+                            <i class="bi bi-arrow-right"></i>
+
+                        </a>
+
+                    </div>
+
+                </div>
+
+
+                <!-- =========================================
+                     FOOTER
+                ========================================== -->
+
+                <footer class="dashboard-footer">
+
+
+                    <div>
+
+                        <strong>
+                            Udyam Sakhi
+                        </strong>
+
+                        <span>
+                            |
+                        </span>
+
+                        <span>
+                            Empowering women. Building futures.
+                        </span>
+
+                    </div>
+
+
+                    <p>
+                        © 2026 Udyam Sakhi. All rights reserved.
+                    </p>
+
+                </footer>
+
+            </section>
+
+        </main>
+
+    </div>
+
+
+    <!-- =====================================================
+         LOGOUT MODAL
+    ====================================================== -->
+
+    <div
+        class="modal fade"
+        id="logoutModal"
+        tabindex="-1"
+        aria-hidden="true"
+    >
+
+        <div class="modal-dialog modal-dialog-centered">
+
+            <div class="modal-content logout-modal-content">
+
+
+                <div class="logout-modal-icon">
+
+                    <i class="bi bi-box-arrow-right"></i>
+
+                </div>
+
+
+                <h3>
+                    Sign Out?
+                </h3>
+
+
+                <p>
+                    Are you sure you want to sign out
+                    of your Udyam Sakhi account?
+                </p>
+
+
+                <div class="logout-modal-actions">
+
+                    <button
+                        type="button"
+                        class="btn logout-cancel-btn"
+                        data-bs-dismiss="modal"
+                    >
+                        Cancel
+                    </button>
+
+
+                    <button
+                        type="button"
+                        class="btn logout-confirm-btn"
+                        id="confirmLogoutButton"
+                    >
+                        Sign Out
+                    </button>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <!-- =====================================================
+         BOOTSTRAP JS
+    ====================================================== -->
+
+    <script
+        src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    ></script>
+
+
+    <!-- =====================================================
+         AUTH JS
+    ====================================================== -->
+
+    <script src="auth.js"></script>
+
+
+    <!-- =====================================================
+         DASHBOARD JS
+    ====================================================== -->
+
+    <script src="dashboard.js"></script>
+
+
+    <!-- =====================================================
+         BUSINESS JS
+    ====================================================== -->
+
+    <script src="business.js"></script>
+
+</body>
+
+</html>
