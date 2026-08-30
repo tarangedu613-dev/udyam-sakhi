@@ -43,7 +43,7 @@ const generatedUserId =
 ========================================================= */
 
 const REGISTER_API_URL =
-    "http://localhost:8080/api/auth/register";
+    "https://udyam-sakhi.onrender.com/api/auth/register";
 
 
 /* =========================================================

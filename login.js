@@ -40,7 +40,7 @@ const forgotPasswordLink =
 ========================================================= */
 
 const LOGIN_API_URL =
-    "http://localhost:8080/api/auth/login";
+    "https://udyam-sakhi.onrender.com/api/auth/login";
 
 
 /* =========================================================
